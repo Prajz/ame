@@ -1,13 +1,20 @@
-import { useState } from 'react'
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Home from './components/Home';
+import Explore from './components/Explore';
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-    <div>yo first test</div>
-    </>
+  <>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/index.html" element={<div className='uer'><Explore /></div>} />
+      <Route path="*" element={<Home />} />
+    </Routes>
+  </BrowserRouter>
+  </>
   )
 }
 
