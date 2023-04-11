@@ -2,6 +2,9 @@
   /*font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;*/
   font-family: 'Titillium Web', sans-serif;
   font-weight: 300;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 
   color-scheme: light dark;
 
@@ -10,4 +13,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.vh{
+  width: 100vw;
+  height: 100vh;
+}
+
+.uer{
+  overflow-y: scroll;
+  width: 100vw;
+  height: 100vh;
 }
